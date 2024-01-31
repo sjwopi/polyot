@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./index.css">
-  <script src="./src/index.js" async="false"></script>
+  <script src="./index.js" async="false"></script>
   <title>НПП ПОЛЕТ</title>
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="first-line-wrapper">
       <div class="logo-wrapper">
-        <a href="./index.html"><img src="/assets/logo.png" alt="logo"></a>
+        <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
       </div>
       <div class="search-wrapper">
         <div id="burger-btn" class="close"></div>
@@ -27,14 +27,65 @@
     </div>
     <nav class="navigation">
       <ul class="navigation-list">
-        <li><a href="./departments.html">О предприятии</a></li>
+        <li id="aboutCompany"><a>О предприятии</a></li>
         <li><a href="#">Руководство. Контакты</a></li>
-        <li><a href="./catalogItem.html">Продукция</a></li>
-        <li><a href="./descriptionItem.html">Услуги</a></li>
-        <li><a href="./descriptionTextItem.html">Научная деятельность</a></li>
-        <li><a href="./newsItem.html">Новости</a></li>
+        <li id="production"><a>Продукция</a></li>
+        <li id="services"><a>Услуги</a></li>
+        <li id="science"><a>Научная деятельность</a></li>
+        <li id="news"><a>Новости</a></li>
       </ul>
     </nav>
+
+    <div class="subnav desk">
+      <div id="nav-aboutCompany" class="subnav_content">
+
+        <div class="subnav__container">
+          <a class="subnav__link" href="./index.html">Общая информация</a>
+          <a class="subnav__link" id="kadr">Кадровая политика</a>
+          <a class="subnav__link">Политика в области качества (лицензии и сертификаты)</a>
+        </div>
+
+        <div class="subnav__container subnav__container_kadr">
+          <a class="subnav__link">Развитие и обучение персонала </a>
+          <a class="subnav__link" href="./departments.html">Базовая кафедра НГТУ им. Р.Е. Алексеева, практическая
+            подготовка студентов, стажировка</a>
+          <a class="subnav__link">Корпоративная социальная политика</a>
+          <a class="subnav__link">Совет молодых работников</a>
+        </div>
+
+      </div>
+
+      <div id="nav-production" class="subnav_content">
+        <div class="subnav__container">
+          <a class="subnav__link" href="./ATitem.html">ПГН в целом</a>
+          <a class="subnav__link" href="./ATitemsub.html">Аппаратура для АТ ГА </a>
+          <a class="subnav__link" href="./MEDitem.html">Медицинская аппаратура</a>
+        </div>
+      </div>
+
+      <div id="nav-services" class="subnav_content">
+        <div class="subnav__container">
+          <a class="subnav__link">Сервисное обслуживание медицинской аппаратуры</a>
+          <a class="subnav__link">Аттестационный центр</a>
+          <a class="subnav__link">Аренда и продажа недвижимости</a>
+          <a class="subnav__link">Подготовка и передача тепловой энергии</a>
+        </div>
+      </div>
+
+      <div id="nav-services" class="subnav_content">
+        <div class="subnav__container">
+          <a class="subnav__link">Аспирантура и диссертационный совет</a>
+        </div>
+      </div>
+
+      <div id="nav-services" class="subnav_content">
+        <div class="subnav__container">
+          <a class="subnav__link">Внешние</a>
+          <a class="subnav__link">Внутренние</a>
+        </div>
+      </div>
+    </div>
+
   </header>
 
   <main>
@@ -99,7 +150,7 @@
           <div class="production-example-wrapper">
             <div class="production-example">
               <div class="production-logo-wrapper">
-                <img src="/assets/productLogo1.png" alt=" ">
+                <img src="./img/productLogo1.png" alt=" ">
               </div>
               <a href="#">
                 <h3>Аппаратура для гражданской авиации</h3>
@@ -107,7 +158,7 @@
             </div>
             <div class="production-example">
               <div class="production-logo-wrapper">
-                <img src="/assets/productLogo2.png" alt=" ">
+                <img src="./img/productLogo2.png" alt=" ">
               </div>
               <a href="#">
                 <h3>Аппаратура для военной авиации</h3>
@@ -120,41 +171,41 @@
       <div class="section-news">
         <h2>Новости</h2>
         <div id="news-wrapper" class="news-wrapper">
-            <div id="news-1" class="slide news-item">
-                <div class="news-logo-wrapper"><img src="/assets/newsLogo1.png" alt="NEWs-logo"></div>
-                <h3 class="news-date">8 ДЕКАБРЯ 2023</h3>
-                <a href="#">
-                    <h3>«РОСТЕХ-ТЕХПРИЕМКА» ПРОВЕЛА АУДИТ НАУЧНО-ПРОИЗОДСТВЕННОГО ПРЕДПРИЯТИЯ «ПОЛЕТ»</h3>
-                </a>
-                <p>Проверка подтвердила, что разрабатываемые предприятием медицинские изделия соответствуют
-                    требованиям межгосударственного стандарта. Выданный сертификат качества позволит НПП «Полет»
-                    успешно работать в отрасли медицинского приборостроения</p>
-            </div>
-            <div id="news-2" class="slide news-item">
-                <div class="news-logo-wrapper"><img src="/assets/newsLogo2.png" alt="NEWs-logo"></div>
-                <h3 class="news-date">14 НОЯБРЯ 2023</h3>
-                <a href="">
-                    <h3>«РОСЭЛЕКТРОНИКА» ДЕМОНСТРИРУЕТ НА DUBAI AIRSHOW НОВЫЕ КОМПЛЕКСЫ СВЯЗИ ДЛЯ ИСТРЕБИТЕЛЕЙ
-                    </h3>
-                </a>
-                <p>Комплекс средств связи, разработанный инженерами НПП «Полет», построен на основе современных
-                    технологий и вычислительных систем. Его применение позволит повысить надежность,
-                    разведзащищенность и помехоустойчивость каналов связи.</p>
-            </div>
-            <div id="news-3" class="slide news-item">
-                <div class="news-logo-wrapper"><img src="/assets/newsLogo3.png" alt="NEWs-logo"></div>
-                <h3 class="news-date">14 АВГУСТА 2023</h3>
-                <a href="">
-                    <h3>НА ФОРУМЕ «АРМИЯ-2023» «РОСТЕХ» ПОКАЗАЛ КОМПАКТНЫЙ МОДЕМ С РАДИУСОМ ДЕЙСТВИЯ ДО 300 КМ
-                    </h3>
-                </a>
-                <p>В рамках международного военно-технического форума «Армия-2023» АО «НПП «Полет» показало
-                    семейство малогабаритных приемопередающих радиомодемов. Они предоставляют возможность
-                    установить надежный радиоканал для управления беспилотниками и обмена данными.</p>
-            </div>
+          <div id="news-1" class="slide news-item">
+            <div class="news-logo-wrapper"><img src="./img/newsLogo1.png" alt="NEWs-logo"></div>
+            <h3 class="news-date">8 ДЕКАБРЯ 2023</h3>
+            <a href="#">
+              <h3>«РОСТЕХ-ТЕХПРИЕМКА» ПРОВЕЛА АУДИТ НАУЧНО-ПРОИЗОДСТВЕННОГО ПРЕДПРИЯТИЯ «ПОЛЕТ»</h3>
+            </a>
+            <p>Проверка подтвердила, что разрабатываемые предприятием медицинские изделия соответствуют
+              требованиям межгосударственного стандарта. Выданный сертификат качества позволит НПП «Полет»
+              успешно работать в отрасли медицинского приборостроения</p>
+          </div>
+          <div id="news-2" class="slide news-item">
+            <div class="news-logo-wrapper"><img src="./img/newsLogo2.png" alt="NEWs-logo"></div>
+            <h3 class="news-date">14 НОЯБРЯ 2023</h3>
+            <a href="">
+              <h3>«РОСЭЛЕКТРОНИКА» ДЕМОНСТРИРУЕТ НА DUBAI AIRSHOW НОВЫЕ КОМПЛЕКСЫ СВЯЗИ ДЛЯ ИСТРЕБИТЕЛЕЙ
+              </h3>
+            </a>
+            <p>Комплекс средств связи, разработанный инженерами НПП «Полет», построен на основе современных
+              технологий и вычислительных систем. Его применение позволит повысить надежность,
+              разведзащищенность и помехоустойчивость каналов связи.</p>
+          </div>
+          <div id="news-3" class="slide news-item">
+            <div class="news-logo-wrapper"><img src="./img/newsLogo3.png" alt="NEWs-logo"></div>
+            <h3 class="news-date">14 АВГУСТА 2023</h3>
+            <a href="">
+              <h3>НА ФОРУМЕ «АРМИЯ-2023» «РОСТЕХ» ПОКАЗАЛ КОМПАКТНЫЙ МОДЕМ С РАДИУСОМ ДЕЙСТВИЯ ДО 300 КМ
+              </h3>
+            </a>
+            <p>В рамках международного военно-технического форума «Армия-2023» АО «НПП «Полет» показало
+              семейство малогабаритных приемопередающих радиомодемов. Они предоставляют возможность
+              установить надежный радиоканал для управления беспилотниками и обмена данными.</p>
+          </div>
         </div>
         <button class="more-btn">Читать больше новостей</button>
-    </div>
+      </div>
 
       <div class="section_news">
         <h2>Новости</h2>
@@ -164,7 +215,7 @@
 
             <div id="news-1" class="swiper-slide">
               <div class="">
-                <img class="news_img" src="/assets/newsLogo1.png" alt="NEWs-logo">
+                <img class="news_img" src="./img/newsLogo1.png" alt="NEWs-logo">
                 <h3 class="news-date">8 ДЕКАБРЯ 2023</h3>
                 <a href="#">
                   <h3>«РОСТЕХ-ТЕХПРИЕМКА» ПРОВЕЛА АУДИТ НАУЧНО-ПРОИЗОДСТВЕННОГО ПРЕДПРИЯТИЯ «ПОЛЕТ»</h3>
@@ -176,7 +227,7 @@
             </div>
             <div id="news-2" class="swiper-slide">
               <div class="">
-                <img class="news_img" src="/assets/newsLogo2.png" alt="NEWs-logo">
+                <img class="news_img" src="./img/newsLogo2.png" alt="NEWs-logo">
                 <h3 class="news-date">14 НОЯБРЯ 2023</h3>
                 <a href="">
                   <h3>«РОСЭЛЕКТРОНИКА» ДЕМОНСТРИРУЕТ НА DUBAI AIRSHOW НОВЫЕ КОМПЛЕКСЫ СВЯЗИ ДЛЯ ИСТРЕБИТЕЛЕЙ
@@ -188,7 +239,7 @@
               </div>
             </div>
             <div id="news-3" class="swiper-slide">
-              <img class="news_img" src="/assets/newsLogo3.png" alt="NEWs-logo">
+              <img class="news_img" src="./img/newsLogo3.png" alt="NEWs-logo">
               <h3 class="news-date">14 АВГУСТА 2023</h3>
               <a href="">
                 <h3>НА ФОРУМЕ «АРМИЯ-2023» «РОСТЕХ» ПОКАЗАЛ КОМПАКТНЫЙ МОДЕМ С РАДИУСОМ ДЕЙСТВИЯ ДО 300 КМ
@@ -223,7 +274,7 @@
             <div class="main-contacts">
               <ul class="main-contacts-address">
                 <li><strong>Адрес:</strong> пл. Комсомольская, д. 1, г. Нижний Новгород, 603950</li>
-                <li><img class="metro-logo" src="./assets/metro-logo.png" alt="M">Ленинская</li>
+                <li><img class="metro-logo" src="../img/metro-logo.png" alt="M">Ленинская</li>
                 <li><strong>Телефон:</strong><a href="tel:+7(831) 245-21-04"> (831) 245-21-04</a></li>
                 <li><strong>Факс:</strong> (831) 249-39-41</li>
                 <li><strong>Электронная почта:</strong> <a href="mailto:mail@npp-polyot.ru">mail@npp-polyot.ru</a></li>
@@ -255,19 +306,19 @@
       </div>
 
       <div class="section-partners">
-        <div class="partner-logo"><img src="./assets/partLogo1.png" alt="RosTeh"></div>
-        <div class="partner-logo"><img src="./assets/partLogo2.png" alt="Rosel"></div>
-        <div class="partner-logo"><img style="filter: invert(1);" src="./assets/partLogo3.png" alt="Nia"></div>
+        <div class="partner-logo"><img src="../img/partLogo1.png" alt="RosTeh"></div>
+        <div class="partner-logo"><img src="../img/partLogo2.png" alt="Rosel"></div>
+        <div class="partner-logo"><img style="filter: invert(1);" src="../img/partLogo3.png" alt="Nia"></div>
       </div>
     </section>
 
   </main>
-  
+
   <footer>
     <div class="footer-wrapper">
       <div class="footer-firstLine">
         <div class="footer-logo">
-          <img src="./assets/logo.png" alt="logo">
+          <img src="../img/logo.png" alt="logo">
         </div>
         <h3>Акционерное общество <br>Научно-производственное предприятие "Полет"</h3>
         <ul>
@@ -277,7 +328,7 @@
           <li><strong>Электронная почта:</strong><a href="mailto: mail@npp-polyot.ru"> mail@npp-polyot.ru</a></li>
         </ul>
         <div class="footer-hotline">
-          <a href="#"><img src="./assets/hotline.png" alt="Горячая линия"></a>
+          <a href="#"><img src="../img/hotline.png" alt="Горячая линия"></a>
         </div>
         <a href="#">Карта сайта</a>
         <p><strong>Разработка сайта - </strong><a href="#">Сайт-НН</a></p>
@@ -299,7 +350,18 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script src="./index.js"></script>
+  <script>
+    if (window.innerWidth <= 1000) {
+      var swiper = new Swiper(".news-wrappers", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        keyboard: true,
+      });
+    }
+  </script>
+  <script src="./navMenu.js"></script>
 </body>
 
 </html>

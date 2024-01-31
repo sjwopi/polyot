@@ -10,10 +10,10 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="first-line-wrapper">
       <div class="logo-wrapper">
-        <a href="./index.html"><img src="/assets/logo.png" alt="logo"></a>
+        <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
       </div>
       <div class="search-wrapper">
         <div id="burger-btn" class="close"></div>
@@ -26,14 +26,64 @@
     </div>
     <nav class="navigation">
       <ul class="navigation-list">
-        <li><a href="./departments.html">О предприятии</a></li>
+        <li id="aboutCompany"><a>О предприятии</a></li>
         <li><a href="#">Руководство. Контакты</a></li>
-        <li><a href="./catalogItem.html">Продукция</a></li>
-        <li><a href="./descriptionItem.html">Услуги</a></li>
-        <li><a href="./descriptionTextItem.html">Научная деятельность</a></li>
-        <li><a href="./newsItem.html">Новости</a></li>
+        <li id="production"><a>Продукция</a></li>
+        <li id="services"><a>Услуги</a></li>
+        <li id="science"><a>Научная деятельность</a></li>
+        <li id="news"><a>Новости</a></li>
       </ul>
     </nav>
+
+    <div class="subnav desk">
+      <div id="nav-aboutCompany" class="subnav_content">
+
+        <div class="subnav__container">
+          <a class="subnav__link" href="./index.html">Общая информация</a>
+          <a class="subnav__link" id="kadr">Кадровая политика</a>
+          <a class="subnav__link">Политика в области качества (лицензии и сертификаты)</a>
+        </div>
+
+        <div class="subnav__container subnav__container_kadr">
+          <a class="subnav__link">Развитие и обучение персонала </a>
+          <a class="subnav__link" href="./departments.html">Базовая кафедра НГТУ им. Р.Е. Алексеева, практическая подготовка студентов, стажировка</a>
+          <a class="subnav__link">Корпоративная социальная политика</a>
+          <a class="subnav__link">Совет молодых работников</a>
+        </div>
+
+      </div>
+
+      <div id="nav-production" class="subnav_content">
+        <div class="subnav__container">
+          <a class="subnav__link" href="./ATitem.html">ПГН в целом</a>
+          <a class="subnav__link" href="./ATitemsub.html">Аппаратура для АТ ГА </a>
+          <a class="subnav__link" href="./MEDitem.html">Медицинская аппаратура</a>
+        </div>
+      </div>
+
+      <div id="nav-services" class="subnav_content">
+        <div class="subnav__container">
+          <a class="subnav__link">Сервисное обслуживание медицинской аппаратуры</a>
+          <a class="subnav__link">Аттестационный центр</a>
+          <a class="subnav__link">Аренда и продажа недвижимости</a>
+          <a class="subnav__link">Подготовка и передача тепловой энергии</a>
+        </div>
+      </div>
+
+      <div id="nav-services" class="subnav_content">
+        <div class="subnav__container">
+          <a class="subnav__link">Аспирантура и диссертационный совет</a>
+        </div>
+      </div>
+
+      <div id="nav-services" class="subnav_content">
+        <div class="subnav__container">
+          <a class="subnav__link">Внешние</a>
+          <a class="subnav__link">Внутренние</a>
+        </div>
+      </div>
+    </div>
+
   </header>
   
   <section class="nav-info-wraper">
@@ -113,9 +163,9 @@
     </section>
 
     <div class="section-partners">
-      <div class="partner-logo"><img src="./assets/partLogo1.png" alt="RosTeh"></div>
-      <div class="partner-logo"><img src="./assets/partLogo2.png" alt="Rosel"></div>
-      <div class="partner-logo"><img style="filter: invert(1);" src="./assets/partLogo3.png" alt="Nia"></div>
+      <div class="partner-logo"><img src="../img/partLogo1.png" alt="RosTeh"></div>
+      <div class="partner-logo"><img src="../img/partLogo2.png" alt="Rosel"></div>
+      <div class="partner-logo"><img style="filter: invert(1);" src="../img/partLogo3.png" alt="Nia"></div>
     </div>
   </main>
 
@@ -123,7 +173,7 @@
     <div class="footer-wrapper">
       <div class="footer-firstLine">
         <div class="footer-logo">
-          <img src="./assets/logo.png" alt="logo">
+          <img src="../img/logo.png" alt="logo">
         </div>
         <h3>Акционерное общество <br>Научно-производственное предприятие "Полет"</h3>
         <ul>
@@ -133,7 +183,7 @@
           <li><strong>Электронная почта:</strong><a href="mailto: mail@npp-polyot.ru"> mail@npp-polyot.ru</a></li>
         </ul>
         <div class="footer-hotline">
-          <a href="#"><img src="./assets/hotline.png" alt="Горячая линия"></a>
+          <a href="#"><img src="../img/hotline.png" alt="Горячая линия"></a>
         </div>
         <a href="#">Карта сайта</a>
         <p><strong>Разработка сайта - </strong><a href="#">Сайт-НН</a></p>
