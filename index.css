@@ -851,7 +851,7 @@ footer{
   align-items: start;
   justify-content: space-between;
 }
-.description__item:nth-child(2n-1) {
+.description__item:nth-child(2n) {
   background-color: rgba(96, 116, 169, 0.1);
 }
 .description__name {
