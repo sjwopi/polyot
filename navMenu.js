@@ -15,11 +15,17 @@ const navIds = [
   "aboutCompany",
   "production",
   "services",
-  "services",
-  "services"
+  "science",
+  "news",
+  "aboutCompanyMob",
+  "productionMob",
+  "servicesMob",
+  "scienceMob",
+  "newsMob"
 ]
 const navIdsSub = [
   "kadr",
+  "kadrMob",
 ]
 
 navIds.forEach(id => {
